@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="370dp"
+        android:src="@mipmap/ic_tails"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:fontFamily="serif"
+        android:hint="            Name"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/textSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/textSurname"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:fontFamily="serif"
+        android:hint="          Surname"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/textAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <EditText
+        android:id="@+id/textAge"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:fontFamily="serif"
+        android:hint="                Age"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/textEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSurname" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="220dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="serif"
+        android:hint="            Email"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAge" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="serif"
+        android:text="Add"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="150dp"
+        android:text="Remove"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
